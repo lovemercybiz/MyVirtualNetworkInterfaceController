@@ -5,10 +5,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python: Socks5ServerRunner.py",
+            "name": "Python: VirtualNicRunner.py",
             "type": "python",
             "request": "launch",
-            "program": "${workspaceFolder}/Socks5ServerRunner.py",
+            "program": "${workspaceFolder}/VirtualNicRunner.py",
             "cwd": "${workspaceFolder}",
             "console": "integratedTerminal"
         }
