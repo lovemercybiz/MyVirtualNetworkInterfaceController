@@ -10,15 +10,15 @@ A Software-Like NIC Capable of Simulating An NIC Hardware
 ## How to Run
 - ### Windows NT (x86)
 ```bat
-    cd dist
-    REM modify `config.ini` to match your NIC(s).
-    myvirtualnic_nt32
+cd dist
+REM modify `config.ini` to match your NIC(s).
+myvirtualnic_nt32
 ```
 - ### Windows NT (AMD64)
 ```bat
-    cd dist
-    REM modify `config.ini` to match your NIC(s).
-    myvirtualnic_nt64
+cd dist
+REM modify `config.ini` to match your NIC(s).
+myvirtualnic_nt64
 ```
 
 ## How when Running
