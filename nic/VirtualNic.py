@@ -139,7 +139,7 @@ class VirtualNic:
                 else:
                     has_wrong_input = True
             verbose_print(
-                "您已成功选择{}个网络适配器:{}".format((NIC_COUNT), ([f'NIC[{id}]' for id in sel_nic_ids])))
+                "您已成功选择{}个网络适配器:{}".format((NIC_COUNT), (['NIC[{}]'.format((id)) for id in sel_nic_ids])))
             is_success = True
         except:
             is_success = False
