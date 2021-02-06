@@ -1,5 +1,5 @@
 # MyVirtualNetworkInterfaceController
-A Software-Like NIC Capable of Simulating An NIC Hardware
+A Software-Like NIC capable of Simulating an NIC Hardware
 
 ## Prerequisites
 - `WinPcap v4.1.3` ***YES AND INSTALL IT***
