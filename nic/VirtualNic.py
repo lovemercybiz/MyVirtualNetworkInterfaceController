@@ -90,7 +90,7 @@ def listen(id, name):
         debug_print("NIC Info: {}".format((str(NIC_INFO))))
         warning_print(SEPERATOR)
         capture.run(packet_callback)
-    warning_print("准备退出关于NIC[{}]的监听子程序...".format((id)))
+    warning_print("准备退出NIC[{}]的Listening子程序...".format((id)))
 
 
 class VirtualNic:
@@ -115,7 +115,7 @@ class VirtualNic:
 
         # show nic devices
         dev_dict = WinPcapDevices.list_devices()
-        info_print("当前配置的网络适配器:".format())
+        info_print("Some NICs available:")
         nic_cnt = len(dev_dict)
         nic_names = list(dev_dict.keys())
         nic_ids = {str(i) for i in range(1, nic_cnt + 1)}
@@ -131,7 +131,7 @@ class VirtualNic:
         try:
             has_wrong_input = False
             while len(sel_nic_ids) < NIC_COUNT:
-                sel_nic = get_striped_input_from_stdin("{}选择第{}块捕获适配器编号({})=>".format((has_wrong_input and '编号非法，请重新' or ''), (1+len(sel_nic_ids)), ('或'.join(nic_ids))))
+                sel_nic = get_striped_input_from_stdin("{}选择第{}块NIC({})=>".format((has_wrong_input and 'ID非法，请重新' or ''), (1+len(sel_nic_ids)), ('或'.join(nic_ids))))
                 if sel_nic in nic_ids:
                     sel_nic_ids.append(int(sel_nic))
                     nic_ids.remove(sel_nic)
@@ -139,7 +139,7 @@ class VirtualNic:
                 else:
                     has_wrong_input = True
             verbose_print(
-                "您已成功选择{}个网络适配器:{}".format((NIC_COUNT), (['NIC[{}]'.format((id)) for id in sel_nic_ids])))
+                "您已成功选择{}个NIC:{}".format((NIC_COUNT), (['NIC[{}]'.format((id)) for id in sel_nic_ids])))
             is_success = True
         except:
             is_success = False
@@ -164,4 +164,4 @@ class VirtualNic:
                     break
             thd.join()
 
-        warning_print("再见!".format())
+        warning_print("再见!")

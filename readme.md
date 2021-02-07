@@ -24,11 +24,11 @@ myvirtualnic_nt64
 ## How when Running
 - ### Windows NT
 ```console
-Info: 当前配置的网络适配器:
+Info: Some NICs available:
 Info: NIC[1] -> name='\Device\NPF_{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}', description='以太网'
 Info: NIC[2] -> name='\Device\NPF_{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}', description='VMware Network Adapter VMnet8'
-Question: 选择第1块捕获适配器编号(2或1)=>1
-Verbose: 您已成功选择1个网络适配器:['NIC[1]']
+Question: 选择第1块NIC(2或1)=>1
+Verbose: 您已成功选择1个NIC:['NIC[1]']
 Debug: NIC Info: id=1, ip=192.168.0.2, mask=255.255.255.0, addr_bit_and_mask=192.168.0.0, mac=XX-XX-XX-XX-XX-XX, gateway_ip=192.168.0.1, gateway_mac=XX-XX-XX-XX-XX-XX
 Warning: --------------------<按下Ctrl+C退出>--------------------
 Verbose: ARP(1) -> sender=[XX-XX-XX-XX-XX-XX:192.168.0.1], target=[FF-FF-FF-FF-FF-FF:192.168.0.1].
@@ -62,6 +62,6 @@ Verbose: ARP(1) -> sender=[XX-XX-XX-XX-XX-XX:192.168.0.1], target=[FF-FF-FF-FF-F
 Verbose: ARP(1) -> sender=[XX-XX-XX-XX-XX-XX:192.168.0.1], target=[FF-FF-FF-FF-FF-FF:192.168.0.1].
 Verbose: ARP(1) -> sender=[XX-XX-XX-XX-XX-XX:192.168.0.1], target=[FF-FF-FF-FF-FF-FF:192.168.0.1].
 Verbose: ARP(1) -> sender=[XX-XX-XX-XX-XX-XX:192.168.0.1], target=[FF-FF-FF-FF-FF-FF:192.168.0.1].
-Warning: 准备退出关于NIC[1]的监听子程序...
+Warning: 准备退出NIC[1]的Listening子程序...
 Warning: 再见!
 ```
