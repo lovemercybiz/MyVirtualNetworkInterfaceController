@@ -2,10 +2,8 @@
 A Software-Like NIC capable of Simulating an NIC Hardware
 
 ## Prerequisites
-- `WinPcap v4.1.3` ***YES AND INSTALL IT***
-- `WinPcap other than WinPcap v4.1.3` ***NO AND UNINSTALL IT***
-- `Win10Pcap` ***NO AND UNINSTALL IT***
-- `Npcap` ***NO AND UNINSTALL IT***
+- `WinPcap 4.1.3` or `Npcap 1.10` or `Win10Pcap 10.2.5002` for AMD64-Based System: ***TESTED AND YES***
+- `WinPcap 4.1.3` for x86-Based System: ***TESTED AND YES***
 
 ## How to Run
 - ### Windows NT (x86)
